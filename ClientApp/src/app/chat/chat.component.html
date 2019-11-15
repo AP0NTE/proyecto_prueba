@@ -1,0 +1,15 @@
+<div>
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    hola {{nombre}}
+    <input type="button" (click)="CambiarNombre()" value="Cambiar el nombre">
+</div>
+<div *ngFor ="let elemeto of LstMessages">
+    {{elemeto}}
+</div>
+<app-message *ngFor ="let elemeto of LstMessages" [texto]="elemeto"></app-message>

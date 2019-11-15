@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">MyDB Add </h1>
+    </div>
+    <p>Aplicación para agregar MyDB</p>
+    <div class="form-group">
+    <label>Id:
+    <input [(ngModel)]="myDB.id" class="form-control" placeholder="digite el id" type="number"/>
+    </label>
+    </div>
+    <div class="form-group">
+    <label>Titulo:
+    <input [(ngModel)]="myDB.name" class="form-control" placeholder="digite titulo" type="text"/>
+    </label>
+    </div>
+    <div class="form-group">
+    <label>Descripción:
+    <input [(ngModel)]="myDB.text" class="form-control" placeholder="digite descripción " type="text" />
+    </label>
+    </div>
+    <div class="form-group">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+    </div>
